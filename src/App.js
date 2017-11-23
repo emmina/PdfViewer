@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PDFViewer from './components/PDFViewer';
-const PDF_URL = 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf';
+const PDF_FILE = require('./assets/MyCV.pdf');
 
 class App extends Component {
   render() {
     return (
-        <PDFViewer src={PDF_URL}/>
+        <PDFViewer src={PDF_FILE}/>
     );
   }
 }
